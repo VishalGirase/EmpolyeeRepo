@@ -1,0 +1,28 @@
+<p>detaillist works!</p>
+<style>
+    table, th, td {
+      border: 1px solid black;
+    }
+    </style>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Info</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let emp of list">
+        <td>{{emp.email}}</td>
+        <td>{{emp.info}}</td>
+        <td>
+            <button type="button" class="btn btn-primary" (click)="goToEdit(emp)">Edit</button>
+        </td>
+        <td>
+            <button type="button" class="btn btn-primary" (click)="goToDelete()">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

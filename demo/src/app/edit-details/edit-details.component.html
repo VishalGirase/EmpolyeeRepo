@@ -1,0 +1,13 @@
+<p>edit-details works!</p>
+<form #myform = "ngForm"  (ngSubmit) = "onSave()" >
+    <input type = "text" name = "Id" placeholder = "ID"  required [(ngModel)] = "employee.id">
+    <br/>
+  
+    <input type = "text" name = "email" placeholder = "Email" required [(ngModel)] = "employee.email">
+    <br/>
+
+    <input type = "text" name = "info" placeholder = "Info" required [(ngModel)] = "employee.info">
+    <br/>
+
+    <button type = "submit">save</button>
+</form>

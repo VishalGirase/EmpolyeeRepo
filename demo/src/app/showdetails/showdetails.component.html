@@ -1,0 +1,30 @@
+<p>showdetails works!</p>
+<!-- <div>
+    <button (click)="goToPage()">gotorender</button>
+</div>  -->
+<form #myform = "ngForm"  (ngSubmit) = "onSubmit()" >
+    <input type = "text" name = "Id" placeholder = "ID"  required [(ngModel)] = "employee.id">
+    <br/>
+  
+    <input type = "text" name = "email" placeholder = "Email" required [(ngModel)] = "employee.email">
+    <br/>
+
+    <input type = "text" name = "info" placeholder = "Info" required [(ngModel)] = "employee.info">
+    <br/>
+
+    <input type = "submit" value = "Send">
+</form>
+<!-- <ng-form ng-submit="save(employee)" name="myForm" novalidate> 
+    Enter Id:     
+    <input type="ID" name="Id" required ng-model="employee.id">
+    <br/>
+    Enter Email: 
+    <input type="email" name="email" required ng-model="employee.email">
+    <br/>
+    Enter Desc: 
+    <input type="email" name="desc" required ng-model="employee.info"> 
+    <br/>
+    <button ng-disabled="!myForm.$valid" type="submit"> 
+        save 
+    </button> 
+</ng-form>  -->
